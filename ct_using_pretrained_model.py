@@ -2,7 +2,7 @@
 
 import cv2
 
-cap = cv2.VideoCapture("C:/GIT/car_tracking_videos/v1.mp4")
+cap = cv2.VideoCapture("C:/GIT/car_tracking_videos/v2.mp4")
 car_cascade = cv2.CascadeClassifier("cars.xml")
 
 while True : 
