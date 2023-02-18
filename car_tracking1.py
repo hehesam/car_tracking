@@ -22,13 +22,13 @@ while True:
         # Calculate area and remove small elements
         area = cv2.contourArea(cnt)
         if area > 300:
-            cv2.drawContours(frame, [cnt], -1, (0, 255, 0), 2)
+            # cv2.drawContours(frame, [cnt], -1, (0, 255, 0), 2)
             x, y, w, h = cv2.boundingRect(cnt)
             cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 3)
 
 
 
-    res = stackImages(0.8, ([mask1,mask3],[mask4,frame]))
+    res = stackImages(0.5, ([mask1,mask3],[mask4,frame]))
     cv2.imshow("see", res)
 
     if cv2.waitKey(1) & 0xFF == ord('t'):
