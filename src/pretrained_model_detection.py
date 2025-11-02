@@ -3,7 +3,7 @@
 import cv2
 
 cap = cv2.VideoCapture("C:/GIT/car_tracking_videos/v2.mp4")
-car_cascade = cv2.CascadeClassifier("cars.xml")
+car_cascade = cv2.CascadeClassifier("data/cars.xml")
 
 while True : 
     _, frame = cap.read()

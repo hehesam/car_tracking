@@ -1,5 +1,5 @@
 import cv2
-from stacker import stackImages
+from utils.stacker import stackImages
 cap = cv2.VideoCapture("C:/GIT/car_tracking_videos/v2.mp4")
 
 MOG2 = cv2.createBackgroundSubtractorMOG2(history=100, varThreshold=40)
